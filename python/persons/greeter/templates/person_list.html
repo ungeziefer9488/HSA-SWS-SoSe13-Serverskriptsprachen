@@ -1,0 +1,7 @@
+{% if person_list %}
+    {% for person in person_list %}
+    {{ person.lastname}}, {{ person.forename }}
+    {% endfor %}
+{% else %}
+    <p> I'm lonly. I don't know anyone. :( </p>
+{% endif %}
