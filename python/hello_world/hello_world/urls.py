@@ -7,7 +7,8 @@ from greeter import views
 
 urlpatterns = patterns('',
     # Examples:
-    url(r'^$', 'greeter.views.index', name='index'),
+    url(r'^$', views.index, name='index'),
+    url(r'^template/', views.template, name='template'),
     # url(r'^hello_world/', include('hello_world.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
