@@ -1,0 +1,7 @@
+<p> create a new person</p>
+<form action="{% url 'add_persons' %}" method="post">
+    {% csrf_token %}
+    <p> Forename: <br><input name="forename" type="text" size="30" maxlength="30"></p>
+    <p> Lastname: <br><input name="lastname" type="text" size="30" maxlength="30"></p>
+    <input type="submit" value="Insert" />
+</form>
